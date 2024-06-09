@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <link rel="shortcut icon" href="4793339.png" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Atena Calc</title>
+</head>
+<body>
+  <!-- CABEÇALHO -->
+  <header class="cabecalho" id="cabecalho">
+    <nav class="container">
+      <a href="/" class="logo">
+        <b></b><span><br>Atena Calc</span></b>
+      </a>
+      <div class="menu" id="menu">
+        <ul class="lista">
+          <li class="item"><a href="#inicio" class="link">Home</a></li>
+     
+          <li class="item"><a href="#variacao-entalpia" class="link">Variação da Entalpia</a></li>
+          <li class="item"><a href="#distribuicao-ionica" class="link">Distribuição Iônica</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="principal">
+    <!-- INÍCIO -->
+    <section class="inicio" id="inicio">
+      <div class="container-inicio">
+        <div class="dados-inicio">
+          <h1 class="titulo">QUÍMICA</h1>
+          <h2 class="fisica">Descubra os segredos da química com Atena Calc.</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Concentração Molar -->
+
+    <!-- Variação da Entalpia -->
+
+    <section class="app section container-app" id="variacao-entalpia"> 
+      <div class="container bd-grid">
+        <div class="dados">
+          <span class="titulo">Variação da Entalpia</span>
+          <h2 class="titulo-secao inicial">Entenda as mudanças de energia em reações químicas</h2>
+          <p class="descricao">
+            A variação da entalpia é a quantidade de calor liberada ou absorvida em uma reação química a pressão constante.
+          </p>
+        </div>
+     
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yzVJ-TSjoAA" frameborder="0" allowfullscreen></iframe>
+      </div> 
+
+      <!-- Calculadora de Variação de Entalpia -->
+      <div class="container" id="calculadoraEntalpia"> 
+        <h1>Calculadora de Variação de Entalpia</h1>
+        <div class="grupo-formulario">
+          <label for="calor-reacao">Calor da Reação (J)</label>
+          <input type="number" id="calor-reacao" placeholder="Insira o calor da reação">
+        </div>
+        <div class="grupo-formulario">
+          <label for="quantidade-substancia">Quantidade de Substância (mol)</label>
+          <input type="number" id="quantidade-substancia" placeholder="Insira a quantidade de substância">
+        </div>
+        <button onclick="calcularVariacaoEntalpia()">Calcular</button>
+        <div class="resultadoEntalpia hidden" id="resultadoEntalpia"></div>
+      </div>
+    </section>
+
+    <!-- Distribuição Iônica -->
+
+    <section class="app section container-app" id="distribuicao-ionica"> 
+      <div class="container bd-grid">
+        <div class="dados">
+          <span class="titulo">Distribuição Iônica</span>
+          <h2 class="titulo-secao inicial">Compreenda a distribuição de íons em soluções aquosas</h2>
+          <p class="descricao">
+            A distribuição iônica é o estudo da dissociação de sais em soluções aquosas, determinando as concentrações dos íons presentes.
+          </p>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/81tl1rYCJTc" frameborder="0" allowfullscreen></iframe>
+        
+        
+      </div> 
+
+      <!-- Calculadora de Distribuição Iônica -->
+      <div class="container" id="calculadoraDistribuicao"> 
+        <h1>Calculadora de Distribuição Iônica</h1>
+        <div class="grupo-formulario">
+          <label for="concentracao-sal">Concentração do Sal (mol/L)</label>
+          <input type="number" id="concentracao-sal" placeholder="Insira a concentração do sal">
+        </div>
+        <div class="grupo-formulario">
+          <label for="volume-solucao">Volume da Solução (L)</label>
+          <input type="number" id="volume-solucao-distribuicao" placeholder="Insira o volume da solução">
+        </div>
+        <button onclick="calcularDistribuicaoIonica()">Calcular</button>
+        <div class="resultadoDistribuicao hidden" id="resultadoDistribuicao"></div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato section container-contato" id="contato">
+      <div class="container bd-grid">
+        <div class="dados">
+          <span class="subtitulo inicial"></span>
+          <h2 class="titulo inicial">Gostou?</h2>
+          <p class="descricao">Venha conferir nosso Instagram. Iremos trazer mais novidades em breve. Bons estudos!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape section container-rodape">
+    <div class="container bd-grid">
+      <div class="conteudo">
+        <b class="logo">Atena<span>Química</span></b>
+        <span class="descricao">O melhor serviço pra você.</span>
+        <div class="social">
+          <a href="https://www.instagram.com/atenacalc_?igsh=MThnMGZiZHU1d2pqeA==" class="social-link" target="_blank"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="copia">
+      &#169; Feito em 2024, por
+      <a href="" class="link">Renan, Vini , Natã e Guilherme</a>
+    </p>
+    
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </footer>
+
+  <script>
+    // Calculadora de Concentração Molar
+    function calcularConcentracaoMolar() {
+      let quantidadeSoluto = parseFloat(document.getElementById('quantidade-soluto').value);
+      let volumeSolucao = parseFloat(document.getElementById('volume-solucao').value);
+  
+      if (!isNaN(quantidadeSoluto) && !isNaN(volumeSolucao)) {
+        let concentracaoMolar = quantidadeSoluto / volumeSolucao;
+        document.getElementById('resultadoMolar').        document.getElementById('resultadoMolar').innerHTML = `Concentração Molar: ${concentracaoMolar.toFixed(2)} mol/L`;
+        document.getElementById('resultadoMolar').classList.remove('hidden');
+      } else {
+        alert('Por favor, insira valores válidos para a quantidade de soluto e volume da solução.');
+      }
+    }
+
+    // Calculadora de Variação de Entalpia
+    function calcularVariacaoEntalpia() {
+      let calorReacao = parseFloat(document.getElementById('calor-reacao').value);
+      let quantidadeSubstancia = parseFloat(document.getElementById('quantidade-substancia').value);
+
+      if (!isNaN(calorReacao) && !isNaN(quantidadeSubstancia)) {
+        let variacaoEntalpia = calorReacao / quantidadeSubstancia;
+        document.getElementById('resultadoEntalpia').innerHTML = `Variação da Entalpia: ${variacaoEntalpia.toFixed(2)} J/mol`;
+        document.getElementById('resultadoEntalpia').classList.remove('hidden');
+      } else {
+        alert('Por favor, insira valores válidos para o calor da reação e quantidade de substância.');
+      }
+    }
+
+    // Calculadora de Distribuição Iônica
+    function calcularDistribuicaoIonica() {
+      let concentracaoSal = parseFloat(document.getElementById('concentracao-sal').value);
+      let volumeSolucao = parseFloat(document.getElementById('volume-solucao-distribuicao').value);
+
+      if (!isNaN(concentracaoSal) && !isNaN(volumeSolucao)) {
+        let concentracaoIonica = concentracaoSal * volumeSolucao; // Simulação do cálculo, ajuste conforme necessário
+        document.getElementById('resultadoDistribuicao').innerHTML = `Distribuição Iônica: ${concentracaoIonica.toFixed(2)} mol/L`;
+        document.getElementById('resultadoDistribuicao').classList.remove('hidden');
+      } else {
+        alert('Por favor, insira valores válidos para a concentração do sal e volume da solução.');
+      }
+    }
+  </script>
+</body>
+</html>
